@@ -11,10 +11,15 @@ int main() {
 void test_linked_node(void) {
     test_linked_node_init();
     test_linked_node_init_with_item();
-    test_linked_node_deinit();
+
     test_linked_node_connect();
     test_linked_node_connect_left_null();
     test_linked_node_connect_right_null();
+    test_linked_node_connect_three_nodes();
+
+    test_linked_node_disconnect();
+
+    test_linked_node_deinit();
     test_linked_node_deinit_null_param();
     test_linked_node_deinit_null_node();
     test_linked_node_deinit_null_item();

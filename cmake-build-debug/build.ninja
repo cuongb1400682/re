@@ -81,12 +81,12 @@ build CMakeFiles/re.dir/regex/regex.c.o: C_COMPILER__re_Debug /Users/cuong.nguye
   OBJECT_DIR = CMakeFiles/re.dir
   OBJECT_FILE_DIR = CMakeFiles/re.dir/regex
 
-build CMakeFiles/re.dir/tests/linked_list.c.o: C_COMPILER__re_Debug /Users/cuong.nguyen/CLionProjects/re/tests/linked_list.c || cmake_object_order_depends_target_re
-  DEP_FILE = CMakeFiles/re.dir/tests/linked_list.c.o.d
+build CMakeFiles/re.dir/tests/collections/linked_list.c.o: C_COMPILER__re_Debug /Users/cuong.nguyen/CLionProjects/re/tests/collections/linked_list.c || cmake_object_order_depends_target_re
+  DEP_FILE = CMakeFiles/re.dir/tests/collections/linked_list.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
   INCLUDES = -I/Users/cuong.nguyen/CLionProjects/re/.
   OBJECT_DIR = CMakeFiles/re.dir
-  OBJECT_FILE_DIR = CMakeFiles/re.dir/tests
+  OBJECT_FILE_DIR = CMakeFiles/re.dir/tests/collections
 
 build CMakeFiles/re.dir/collections/linked_node.c.o: C_COMPILER__re_Debug /Users/cuong.nguyen/CLionProjects/re/collections/linked_node.c || cmake_object_order_depends_target_re
   DEP_FILE = CMakeFiles/re.dir/collections/linked_node.c.o.d
@@ -95,12 +95,12 @@ build CMakeFiles/re.dir/collections/linked_node.c.o: C_COMPILER__re_Debug /Users
   OBJECT_DIR = CMakeFiles/re.dir
   OBJECT_FILE_DIR = CMakeFiles/re.dir/collections
 
-build CMakeFiles/re.dir/tests/linked_node.c.o: C_COMPILER__re_Debug /Users/cuong.nguyen/CLionProjects/re/tests/linked_node.c || cmake_object_order_depends_target_re
-  DEP_FILE = CMakeFiles/re.dir/tests/linked_node.c.o.d
+build CMakeFiles/re.dir/tests/collections/linked_node.c.o: C_COMPILER__re_Debug /Users/cuong.nguyen/CLionProjects/re/tests/collections/linked_node.c || cmake_object_order_depends_target_re
+  DEP_FILE = CMakeFiles/re.dir/tests/collections/linked_node.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
   INCLUDES = -I/Users/cuong.nguyen/CLionProjects/re/.
   OBJECT_DIR = CMakeFiles/re.dir
-  OBJECT_FILE_DIR = CMakeFiles/re.dir/tests
+  OBJECT_FILE_DIR = CMakeFiles/re.dir/tests/collections
 
 
 # =============================================================================
@@ -110,7 +110,7 @@ build CMakeFiles/re.dir/tests/linked_node.c.o: C_COMPILER__re_Debug /Users/cuong
 #############################################
 # Link the executable re
 
-build re: C_EXECUTABLE_LINKER__re_Debug CMakeFiles/re.dir/main.c.o CMakeFiles/re.dir/collections/linked_list.c.o CMakeFiles/re.dir/collections/hash_set.c.o CMakeFiles/re.dir/regex/transition_graph.c.o CMakeFiles/re.dir/regex/regex.c.o CMakeFiles/re.dir/tests/linked_list.c.o CMakeFiles/re.dir/collections/linked_node.c.o CMakeFiles/re.dir/tests/linked_node.c.o
+build re: C_EXECUTABLE_LINKER__re_Debug CMakeFiles/re.dir/main.c.o CMakeFiles/re.dir/collections/linked_list.c.o CMakeFiles/re.dir/collections/hash_set.c.o CMakeFiles/re.dir/regex/transition_graph.c.o CMakeFiles/re.dir/regex/regex.c.o CMakeFiles/re.dir/tests/collections/linked_list.c.o CMakeFiles/re.dir/collections/linked_node.c.o CMakeFiles/re.dir/tests/collections/linked_node.c.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
   OBJECT_DIR = CMakeFiles/re.dir
   POST_BUILD = :

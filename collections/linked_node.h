@@ -11,10 +11,11 @@ struct linked_node {
     void *item;
 };
 
-struct linked_node *linked_node_init();
-struct linked_node *linked_node_init_with_item(void *);
-void linked_node_deinit(struct linked_node **);
+struct linked_node *linked_node_init(void);
+struct linked_node *linked_node_init_with_item(void *item);
+void linked_node_deinit(struct linked_node **node_ptr);
 
 void linked_node_connect(struct linked_node *lhs, struct linked_node *rhs);
+void linked_node_disconnect(struct linked_node *node);
 
 #endif //RE_LINKED_NODE_H

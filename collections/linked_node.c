@@ -40,3 +40,18 @@ void linked_node_connect(struct linked_node *lhs, struct linked_node *rhs) {
         rhs->prev = lhs;
     }
 }
+
+void linked_node_disconnect(struct linked_node *node) {
+    struct linked_node *left;
+    struct linked_node *right;
+
+    left = node->prev;
+    right = node->next;
+
+    linked_node_connect(left, right);
+
+    if (node != NULL) {
+        node->next = NULL;
+        node->prev = NULL;
+    }
+}

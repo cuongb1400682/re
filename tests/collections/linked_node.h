@@ -14,7 +14,10 @@ void test_linked_node_deinit_null_node(void);
 void test_linked_node_deinit_null_item(void);
 
 void test_linked_node_connect(void);
+void test_linked_node_connect_three_nodes(void);
 void test_linked_node_connect_left_null(void);
 void test_linked_node_connect_right_null(void);
+
+void test_linked_node_disconnect(void);
 
 #endif //RE_LINKED_NODE_H
