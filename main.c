@@ -1,11 +1,17 @@
 #include "tests/collections/linked_list.h"
 #include "tests/collections/linked_node.h"
 
+void test_linked_list(void);
 void test_linked_node(void);
 
 int main() {
+    test_linked_list();
     test_linked_node();
     return 0;
+}
+
+void test_linked_list(void) {
+
 }
 
 void test_linked_node(void) {
