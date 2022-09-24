@@ -12,7 +12,15 @@ struct linked_node *linked_node_init() {
 }
 
 void linked_node_deinit(struct linked_node **node) {
-    free((*node)->item);
+    if (node == NULL || *node == NULL) {
+        return;
+    }
+
+    if ((*node)->item != NULL) {
+        free((*node)->item);
+        (*node)->item = NULL;
+    }
+
     free(*node);
     *node = NULL;
 }
@@ -24,6 +32,11 @@ struct linked_node *linked_node_init_with_item(void *item) {
 }
 
 void linked_node_connect(struct linked_node *lhs, struct linked_node *rhs) {
-    lhs->next = rhs;
-    rhs->prev = lhs;
+    if (lhs != NULL) {
+        lhs->next = rhs;
+    }
+
+    if (rhs != NULL) {
+        rhs->prev = lhs;
+    }
 }
