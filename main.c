@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 #include "tests/collections/linked_list.h"
 #include "tests/collections/linked_node.h"
 
@@ -7,11 +9,16 @@ void test_linked_node(void);
 int main() {
     test_linked_list();
     test_linked_node();
+    puts("All test cases passed!");
     return 0;
 }
 
 void test_linked_list(void) {
+    test_linked_list_init();
+    test_linked_list_deinit();
 
+    test_linked_list_prepend();
+    test_linked_list_prepend_5_items();
 }
 
 void test_linked_node(void) {

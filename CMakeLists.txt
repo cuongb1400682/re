@@ -15,4 +15,4 @@ add_executable(
         regex/transition_graph.c regex/transition_graph.h
         regex/regex.c regex/regex.h
         tests/collections/linked_list.c tests/collections/linked_list.h
-        collections/linked_node.c collections/linked_node.h tests/collections/linked_node.c tests/collections/linked_node.h)
+        collections/linked_node.c collections/linked_node.h tests/collections/linked_node.c tests/collections/linked_node.h check/check.c check/check.h)

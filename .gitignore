@@ -77,3 +77,12 @@ include/*
 lib/*
 bin/*
 test/test_runner
+cmake-build-debug/re
+cmake-build-debug/build.ninja
+cmake-build-debug/Testing/Temporary/LastTest.log
+*.o
+cmake-build-debug/.ninja_log
+cmake-build-debug/.ninja_deps
+cmake-build-debug/.cmake/api/v1/reply/target-re-Debug-102916b15abfbd9714ad.json
+cmake-build-debug/.cmake/api/v1/reply/index-2022-09-24T04-20-26-0782.json
+cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-5d2a15425371cb97e808.json

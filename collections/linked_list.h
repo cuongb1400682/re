@@ -21,10 +21,10 @@ struct linked_list *linked_list_init(void);
 
 void linked_list_deinit(struct linked_list **list_ptr);
 
-struct linked_node *linked_list_prepend(void *item);
-struct linked_node *linked_list_append(void *item);
-struct linked_node *linked_list_insert_after(void *item, struct linked_node *node);
-struct linked_node *linked_list_insert_before(void *item, struct linked_node *node);
+struct linked_node *linked_list_prepend(struct linked_list *list, void *item);
+struct linked_node *linked_list_append(struct linked_list *list, void *item);
+struct linked_node *linked_list_insert_after(struct linked_list *list, void *item, struct linked_node *node);
+struct linked_node *linked_list_insert_before(struct linked_list *list, void *item, struct linked_node *node);
 
 struct linked_node *linked_list_pop_first(struct linked_list *list);
 struct linked_node *linked_list_pop_last(struct linked_list *list);
